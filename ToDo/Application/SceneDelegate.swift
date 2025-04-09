@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -18,6 +19,33 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
     }
+    
+    //      var appCoordinator: AppCoordinator?
+//
+//        func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+//            guard let windowScene = (scene as? UIWindowScene) else { return }
+//
+//            // Create window programmatically
+//            let window = UIWindow(windowScene: windowScene)
+//            self.window = window
+//
+//            // Set up the app coordinator
+//            let navigationController = UINavigationController()
+//            appCoordinator = AppCoordinator(navigationController: navigationController)
+//            window.rootViewController = navigationController
+//
+//            // Start the app flow
+//            appCoordinator?.start()
+//
+//            window.makeKeyAndVisible()
+//        }
+//
+//        func sceneDidDisconnect(_ scene: UIScene) {}
+//        func sceneDidBecomeActive(_ scene: UIScene) {}
+//        func sceneWillResignActive(_ scene: UIScene) {}
+//        func sceneWillEnterForeground(_ scene: UIScene) {}
+//        func sceneDidEnterBackground(_ scene: UIScene) {}
+//    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
