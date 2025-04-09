@@ -69,7 +69,7 @@ enum FirebaseError: Error, LocalizedError {
     case invalidResponse            // Response wasn't a valid HTTP response
     case badStatusCode(Int)         // Got an HTTP error code (like 404, 500)
     case noData                     // Expected data but received none
-    case decodeingError(Error)      // Failed to parse the JSON data
+    case decodingError(Error)      // Failed to parse the JSON data
     case encodingError(Error)       // Failed to encode data for sending
     case operationFailed(String)    // Generic failure for operations like delete/update
     
@@ -77,7 +77,13 @@ enum FirebaseError: Error, LocalizedError {
         
         switch self {
         case .invalidURL(let url): return "Internal error: Invalid URL constructed (\(url))"
-        case .requestFailed(<#T##Error?#>)
+        case .requestFailed(let err): return "Network request failed. Check connection. (\(err?.localizedDescription ?? "Unknown"))"
+        case .invalidResponse: return "Received an invalid response from the server."
+        case .badStatusCode(let code): return "Server returned an error (Status Code: \(code))."
+        case .noData: return "No data received from the server."
+        case .decodingError(let err): return "Failed to understand server response. (\(err.localizedDescription))"
+        case .encodingError(let err): return "Failed to prepare data to send. (\(err.localizedDescription))"
+        case .operationFailed(let msg): return "Operation failed: \(msg)"
         }
         
     }
