@@ -16,6 +16,11 @@
 		FA7E3FFA2DA7DB310002E44F /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E3FF92DA7DB310002E44F /* FirebaseService.swift */; };
 		FA7E3FFD2DA7DE140002E44F /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E3FFC2DA7DE140002E44F /* TaskList.swift */; };
 		FA8858722DA552CE0056018D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA8858712DA552CE0056018D /* GoogleService-Info.plist */; };
+		FA8F08B62DA7F574006FDC44 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F08B52DA7F574006FDC44 /* TaskListCell.swift */; };
+		FA8F08B92DA7F5AE006FDC44 /* TasksListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F08B82DA7F5AE006FDC44 /* TasksListVC.swift */; };
+		FA8F08BC2DA7F5EA006FDC44 /* TaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F08BB2DA7F5EA006FDC44 /* TaskVC.swift */; };
+		FA8F08BF2DA7F61F006FDC44 /* TaskDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F08BE2DA7F61F006FDC44 /* TaskDetailVC.swift */; };
+		FA8F08C22DA7F647006FDC44 /* TaskCreationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F08C12DA7F647006FDC44 /* TaskCreationVC.swift */; };
 		FAC3F7782DA5808800548381 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3F7772DA5808800548381 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,11 @@
 		FA7E3FF92DA7DB310002E44F /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		FA7E3FFC2DA7DE140002E44F /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		FA8858712DA552CE0056018D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA8F08B52DA7F574006FDC44 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
+		FA8F08B82DA7F5AE006FDC44 /* TasksListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListVC.swift; sourceTree = "<group>"; };
+		FA8F08BB2DA7F5EA006FDC44 /* TaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVC.swift; sourceTree = "<group>"; };
+		FA8F08BE2DA7F61F006FDC44 /* TaskDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailVC.swift; sourceTree = "<group>"; };
+		FA8F08C12DA7F647006FDC44 /* TaskCreationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationVC.swift; sourceTree = "<group>"; };
 		FAC3F7772DA5808800548381 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +130,11 @@
 		FA4DCB462DA3C3E9004DEC30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA8F08B52DA7F574006FDC44 /* TaskListCell.swift */,
+				FA8F08B82DA7F5AE006FDC44 /* TasksListVC.swift */,
+				FA8F08BB2DA7F5EA006FDC44 /* TaskVC.swift */,
+				FA8F08BE2DA7F61F006FDC44 /* TaskDetailVC.swift */,
+				FA8F08C12DA7F647006FDC44 /* TaskCreationVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,12 +309,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8F08BF2DA7F61F006FDC44 /* TaskDetailVC.swift in Sources */,
+				FA8F08B62DA7F574006FDC44 /* TaskListCell.swift in Sources */,
 				FAC3F7782DA5808800548381 /* Utilities.swift in Sources */,
+				FA8F08C22DA7F647006FDC44 /* TaskCreationVC.swift in Sources */,
 				FA7E3FFD2DA7DE140002E44F /* TaskList.swift in Sources */,
+				FA8F08BC2DA7F5EA006FDC44 /* TaskVC.swift in Sources */,
 				FA7E3FFA2DA7DB310002E44F /* FirebaseService.swift in Sources */,
 				FA4DCB2E2DA3A585004DEC30 /* AppDelegate.swift in Sources */,
 				FA76DF772DA686A800CBF9E6 /* TaskModel.swift in Sources */,
 				FA4DCB302DA3A585004DEC30 /* SceneDelegate.swift in Sources */,
+				FA8F08B92DA7F5AE006FDC44 /* TasksListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
